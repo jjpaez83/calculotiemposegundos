@@ -1,0 +1,38 @@
+package tiemposegundos;
+
+import java.util.Scanner;
+
+public class Tiemposegundos {
+
+    public static void main(String[] args) {
+        // Introduces un número de segundos y permite convertirlos en horas minutos y segundos
+
+        //Constantes
+        final int HORA = 3600;
+        final int MINUTO = 60;
+
+        //Variables
+        int t, h, m, s;
+
+        //Entrada
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Tiempo en Segundos: ");
+        t = teclado.nextInt();
+
+        //Proceso
+        h = t / HORA;
+        t = t % HORA;
+        m = t / MINUTO;
+        s = t % MINUTO;
+
+        //Salida 
+        System.out.println("");
+
+        // Salida
+        System.out.println("");
+        System.out.println("Horas: " + h);
+        System.out.println("Minutos: " + m);
+        System.out.println("Segundos: " + s);
+    }
+
+}
